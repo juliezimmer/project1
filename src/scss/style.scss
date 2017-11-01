@@ -1,0 +1,71 @@
+// Main Sass File
+// Variables will be added here for styling using Sass
+
+/* This variable is for the background color of the page and is a light gray */
+$bg-color:#333;
+
+//this variable sets the font color to white
+$font-color:#fff;
+
+//this variable sets the primary color to variable
+$primary-color:#008ed6;
+
+//this variable is for the photo overlay
+$dark-overlay: rgba(0,0,0,0.7); 
+
+//this variable will set font-size
+$font-size: 30px;
+
+/* these variables will now be used to style the body of the page using the body element as the selector */
+
+body{
+    background:$bg-color;
+    color:$font-color;
+}
+
+//adds a 3 px solid blue border to the bottom of the navbar
+//the opacity addes a little bit of transparency
+.navbar{
+    border-bottom: $primary-color 3px solid;
+    opacity: 0.8;
+}
+
+/* using the home-section id */
+#home-section{
+    background:url('../img/home.jpg') no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    min-height:700px;
+
+    /* this uses the variable that was set on line 14 above; more nested Sass */
+    .dark-overlay{
+        background-color:$dark-overlay;
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+        }
+
+    // this is nested Sass
+    .home-inner{ 
+        padding-top: 150px;
+        }
+    
+        //this makes the card more opaque
+    .card-form {
+        opacity: 0.8;
+        }
+    
+    // icon styling
+    //because this is nested in the home-section, this styling will only pertain to the icons nested in the home-section
+    .fa {
+        color: $primary-color;
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: $font-size;
+        }
+
+
+}
