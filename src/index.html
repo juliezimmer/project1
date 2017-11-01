@@ -13,11 +13,12 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <!-- container is added to constrain the content of the navbar, but putting the container under the navbar allows the navbar to go all the way across -->
         <div class="container">
+            <a href="index.html" class="navbar-brand">LoopLAB</a>
             <!-- the navbar button will only be displayed on small screens as is identified in the class of the first nav tag with "navbar-expand-sm" -->
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="index.html" class="navbar-brand">LoopLAB</a>
+           
             <!-- the id in this div has to be the same as the data-target in the opening button tag -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
@@ -134,7 +135,7 @@
                 <div class="col-md-6">
                     <h3>Explore & Connect</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, hic! Accusantium numquam obcaecati, eos, amet distinctio rerum veritatis aut exercitationem inventore delectus pariatur reiciendis? Quaerat.</p> 
-                     <div class="d-flex flex-row">
+                    <div class="d-flex flex-row">
                         <div class="p-4 align-self-start">
                            <i class="fa fa-check"></i>
                         </div> 
@@ -154,7 +155,149 @@
             </div>
         </div>
     </section>    
+<!-- *********** CREATE HEAD ************** -->
+<!-- class="bg-primary" in the section element tag changes the background to the primary blue that is a default color in Bootstrap4 -->
+    <section id="create-head-section" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="py-5">
+                        <h1 class="display-4">Create</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sed, magni, veritatis aliquam sequi eveniet? Rerum quia accusanituum alias provident perferendis.</p>
+                        <a href="#" class="btn btn-outline-light">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+<!-- ********* CREATE Section  *********** -->
+<!-- this section will have the dark background by default since nothing else is specified in the section element tag -->
+    <section id="create-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Create Your Passion</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, hic! Accusantium numquam obcaecati, eos, amet distinctio rerum veritatis aut exercitationem inventore delectus pariatur reiciendis? Quaerat.</p> 
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div> 
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, eum sapiente! At, ex. 
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div> 
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, eum sapiente! At, ex. 
+                        </div>
+                    </div>  
+                </div>
+            <div class="col-md-6">
+                <!-- this image will take up the entire space it is in (img-fluid), have a bottom margin of 3, and be rounded in a circle shape. -->
+                <img src="img/coffee.jpg" alt="coffee on table" class="img-fluid mb-3 rounded-circle">         
+            </div>    
+        </div>
+    </div>
+</section>
+
+    <!-- *********** SHARE HEAD ************** -->
+<!-- class="bg-primary" in the section element tag changes the background to the primary blue that is a default color in Bootstrap4 -->
+<section id="share-head-section" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="py-5">
+                        <h1 class="display-4">Share</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sed, magni, veritatis aliquam sequi eveniet? Rerum quia accusanituum alias provident perferendis.</p>
+                        <a href="#" class="btn btn-outline-light">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ********* SHARE Section  *********** -->
+<!-- class="bg-light" on the section element tag makes the background light, instead of dark --> 
+    <section id="share-section" class="py-5 bg-light text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/share.jpg" alt="sunset people" class="img-fluid mb-3 rounded-circle">
+                </div> 
+                    <div class="col-md-6">
+                        <h3>Share What You Create</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, hic! Accusantium numquam obcaecati, eos, amet distinctio rerum veritatis aut exercitationem inventore delectus pariatur reiciendis? Quaerat.</p> 
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div> 
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, eum sapiente! At, ex. 
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="p-4 align-self-start">
+                            <i class="fa fa-check"></i>
+                        </div> 
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, eum sapiente! At, ex. 
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ******** MAIN FOOTER ******** -->
+<footer id="main-footer" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="py-4">
+                    <h1 class="h3">LoopLAB</h1>
+                    <p>copyright &copy; 2017</p>
+                    <!-- this button will open a modal, so it needs special attributes not mornally used with buttons like data-toggle="modal" and data-target="#contactModal" --> 
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                    <!-- the actual modal content is under the closing footer tag -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Contact Modal -->
+<div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block">Submit</button> 
+            </div>
+    </div>
+</div>  
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
