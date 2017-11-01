@@ -13,8 +13,8 @@ $primary-color:#008ed6;
 //this variable is for the photo overlay
 $dark-overlay: rgba(0,0,0,0.7); 
 
-//this variable will set font-size
-$font-size: 30px;
+//this variable will set font-size for the icons
+$icon-size: 30px;
 
 /* these variables will now be used to style the body of the page using the body element as the selector */
 
@@ -64,8 +64,18 @@ body{
         background: #fff;
         padding: 4px;
         border-radius: 5px;
-        font-size: $font-size;
-        }
+        font-size: $icon-size;
+    }
+}
 
-
+//These are nested styles
+#explore-section {
+    .fa {
+        color:#ffff;
+        background:#333;
+        padding: 4px;
+        border-radius: 5px;
+        font-size:$icon-size;
+        
+    }
 }
